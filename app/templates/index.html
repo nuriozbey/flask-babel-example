@@ -1,0 +1,75 @@
+<!Doctype html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css imports -->
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+    <title>My Flask Babel Example</title>
+</head>
+
+<body>
+    <h1>{{ _('Hello, World!') }}</h1>
+    <p>{{ _('This is an example of Flask Babel.') }}</p>
+
+    <h3>{{ _('Post Method Language Change')}}</h3>
+    <div class="button-area">
+        <form  method="post" action="{{ url_for('set_locale') }}">
+            <select class="select-form" name="language">
+                        <option value="en" selected>EN</option>
+                        <option value="tr">TR</option>
+                        <option value="de">DE</option>
+                        <option value="fr">FR</option>
+                        <option value="es">ES</option>
+            </select>
+            <button class="button-language" type="submit">{{ _('Change Language')}}</button>
+        </form>
+    </div>
+    <br>
+    <h3>{{ _('Get Method Language Change with Button')}}</h3>
+    <div class="button-area">
+        <button class="button-language" onclick="location.href='{{ url_for('set_locale', locale='en') }}'"><span class="fi fi-gb fis"></span> {{ _('English')}}</button>
+        <button class="button-language" onclick="location.href='{{ url_for('set_locale', locale='tr') }}'"><span class="fi fi-tr fis"></span> {{ _('Turkish')}}</button>
+        <button class="button-language" onclick="location.href='{{ url_for('set_locale', locale='de') }}'"><span class="fi fi-de fis"></span> {{ _('German')}}</button>
+        <button class="button-language" onclick="location.href='{{ url_for('set_locale', locale='fr') }}'"><span class="fi fi-fr fis"></span> {{ _('French')}}</button>
+        <button class="button-language" onclick="location.href='{{ url_for('set_locale', locale='es') }}'"><span class="fi fi-es fis"></span> {{ _('Spanish')}}</button>
+    </div>
+
+    <br>
+    <!-- put current language --> 
+    <p>{{ _('Current Language')}}: {{ language }}</p>
+    <br>
+    <ul>
+        <li>{{ _('Imagination is more important than knowledge.') }} <span>Albert Einstein</span></li>
+        <li>{{ _('Science knows no country, because knowledge belongs to humanity, and is the torch which illuminates the world.') }} <span>Louis Pasteur</span></li>
+        <li>{{ _('The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom.') }} <span>Isaac Asimov</span></li>
+        <li>{{ _('We are all now connected by the Internet, like neurons in a giant brain.') }} <span>Stephen Hawking</span></li>
+        <li>{{ _("The good thing about science is that it's true whether or not you believe in it.") }} <span>Neil deGrasse Tyson</span></li>
+    </ul>
+
+</body>
+	<!-- Footer-->
+    <footer>
+        <div class="footer-bottom">
+            <!-- add all information -->
+            <p>Copyright &copy;2023 <a class="developer" href="mailto:nuri.ozbey@arcelik.com"><i
+                        class="fa-solid fa-user"></i></a>
+            </p>
+            <div class="link-group">
+                <a href="{{ url_for('swagger_ui.show') }}" class="link-text-class" aria-current="page"><i
+                        class="fa-solid fa-book"></i> {{ _('Swagger Documents')}} </a>
+                <a href="https://github.com/nuriozbey/flask-babel-example" class="link-text-class"> <i
+                        class="fa-solid fa-code"></i> {{ _('Source Code')}}  </a>
+                <!--<a href="mailto:nuri.ozbey@arcelik.com" class="link-text-class"> <i class="fa fa-envelope"
+                        aria-hidden="true"></i> Mail me </a>-->
+            </div>
+        </div>
+    </footer>
+</html>
