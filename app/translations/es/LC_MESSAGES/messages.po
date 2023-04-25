@@ -1,0 +1,92 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-04-25 16:33+0300\n"
+"PO-Revision-Date: 2023-04-25 16:30+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: app/templates/index.html:9
+msgid "Hello, World!"
+msgstr "Hola, Mundo!"
+
+#: app/templates/index.html:10
+msgid "This is an example of Flask Babel."
+msgstr "Este es un ejemplo de Flask Babel."
+
+#: app/templates/index.html:12
+msgid "Post Method Language Change"
+msgstr "Cambio de idioma por método POST"
+
+#: app/templates/index.html:21
+msgid "Change Language"
+msgstr "Cambiar idioma"
+
+#: app/templates/index.html:24
+msgid "Get Method Language Change with Button"
+msgstr "Cambio de idioma por método GET con botón"
+
+#: app/templates/index.html:25
+msgid "English"
+msgstr "Inglés"
+
+#: app/templates/index.html:26
+msgid "Turkish"
+msgstr "Turco"
+
+#: app/templates/index.html:27
+msgid "German"
+msgstr "Alemán"
+
+#: app/templates/index.html:28
+msgid "French"
+msgstr "Francés"
+
+#: app/templates/index.html:29
+msgid "Spanish"
+msgstr "Español"
+
+#: app/templates/index.html:33
+msgid "Current Language"
+msgstr "Idioma actual"
+
+#: app/templates/index.html:36
+msgid "Imagination is more important than knowledge."
+msgstr "La imaginación es más importante que el conocimiento."
+
+#: app/templates/index.html:37
+msgid "Science knows no country, because knowledge belongs to humanity, and is the torch which illuminates the world."
+msgstr "La ciencia no conoce país, porque el conocimiento pertenece a la humanidad, y es la antorcha que ilumina el mundo."
+
+#: app/templates/index.html:38
+msgid "The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom."
+msgstr "El aspecto más triste de la vida en este momento es que la ciencia recoge conocimiento más rápido que la sociedad recoge sabiduría."
+
+#: app/templates/index.html:39
+msgid "We are all now connected by the Internet, like neurons in a giant brain."
+msgstr "Ahora estamos todos conectados por Internet, como neuronas en un gran cerebro."
+
+#: app/templates/index.html:40
+msgid "The good thing about science is that it's true whether or not you believe in it."
+msgstr "La buena cosa de la ciencia es que es cierto si crees en él o no."
+
+#: app/templates/index.html:53
+msgid "Swagger Documents"
+msgstr "Documentos Swagger"
+
+#: app/templates/index.html:55
+msgid "Source Code"
+msgstr "Código fuente"
+
