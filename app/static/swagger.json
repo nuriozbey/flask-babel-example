@@ -1,0 +1,26 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "description": "Nuri Ozbey",
+      "version": "1.0",
+      "title": "Docker-Python3-Flask-Babel-UI",
+      "contact": {
+        "email": "nuriozbey@gmail.com"
+      },
+      "license": {
+        "name": "GPL-3.0 License",
+        "url": "https://opensource.org/licenses/GPL-3.0"
+      }
+    },
+    "servers": [
+      {
+        "url": "/"
+      }
+    ],
+    "tags": [
+      {
+        "name": "Flask Babel Example",
+        "description": "Flask Application with Multi-Language Support (TR-EN-DE-FR)"
+      }
+    ]
+  }

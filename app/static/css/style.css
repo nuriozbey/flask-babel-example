@@ -1,0 +1,234 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 90px;
+}
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 48px;
+    margin-left: 2%;
+}
+
+h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 2%;
+    color: rgb(219, 30, 30);
+}
+
+p {
+    font-family: 'Helvetica';
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #333333;
+    margin-left: 2%;
+}
+
+.button-area {
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+/* language buttons */
+.button-language {
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.button-language:hover {
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+
+.button-language:disabled {
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
+}
+
+.button-language:active {
+    background-color: #EDEFF2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+}
+
+.button-language:focus {
+    outline: 1px transparent;
+}
+
+.button-language:before {
+    display: none;
+}
+
+.button-language:-webkit-details-marker {
+    display: none;
+}
+
+.select-form {
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 4px 9px;
+    position: relative;
+}
+
+/*==================*/
+/*====== Footer =======*/
+/*==================*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: gray;
+    height: 60px;
+    width: 100%;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    float: left;
+    margin-left: 1%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.developer {
+    color: #44bae8;
+    font-size: 14px;
+    text-decoration: none;
+    word-spacing: 1px;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.link-group {
+    float: right;
+    align-items: center;
+    margin-right: 1%;
+    padding-top: 15px;
+    height: 60px;
+    text-align: center;
+}
+
+.link-text-class {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 16px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+}
+
+.link-text-class:hover {
+    text-decoration: underline;
+}
+
+
+/* ==================== */
+/* ====== Quotes ====== */
+/* ==================== */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+
+
+ul {
+    list-style-type: none;
+}
+
+
+li {
+    font-size: 1.2em;
+    width: 60%;
+    margin: 30px auto;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #00b5ef;
+    line-height: 1.4;
+    position: relative;
+    background: #EDEDED;
+}
+
+li::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #00b5ef;
+    font-size: 3.5em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+li:after {
+    font-family: Arial;
+    content: "\201D";
+    color: #00b5ef;
+    font-size: 3.5em;
+    position: absolute;
+    right: 1rem;
+    bottom: -1.5rem;
+}
+
+li span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 0.2em;
+}
