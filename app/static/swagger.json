@@ -12,6 +12,7 @@
         "url": "https://opensource.org/licenses/GPL-3.0"
       }
     },
+    "host" : "localhost:5000",
     "servers": [
       {
         "url": "/"
