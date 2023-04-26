@@ -7,14 +7,12 @@ from flask_swagger_ui import get_swaggerui_blueprint
 app = Flask(__name__)
 app.secret_key = 'secret_key'
 
-# set the default language to English
+# set the default language to English and the default timezone to Istanbul
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
+app.config['BABEL_DEFAULT_TIMEZONE'] = 'Europe/Istanbul'
 
-# define a list of additional translation files to watch for changes
-extra_files = ['./translations/tr/LC_MESSAGES/messages.mo',
-               './translations/de/LC_MESSAGES/messages.mo',
-               './translations/fr/LC_MESSAGES/messages.mo',
-               './translations/es/LC_MESSAGES/messages.mo']
+# set the path to the translation files
+app.config['BABEL_TRANSLATION_DIRECTORIES'] = './translations'
 
 # define a dictionary of available languages
 app.config['LANGUAGES'] = {
@@ -47,13 +45,9 @@ babel = Babel(app, locale_selector=get_locale)
 def set_locale():
     if request.method == 'POST':
         if "language" in request.form:
-            # print(locale)
             session['language'] = request.form['language']
             session['locale'] = request.form['language']
-            # print(session['locale'])
-            # app.config['BABEL_DEFAULT_LOCALE'] = locale
             return redirect(url_for('index'))
-        # session['locale'] = request.form['language']
     elif request.method == 'GET':
         locale = request.args.get('locale')
         if locale in app.config['LANGUAGES']:
