@@ -12,6 +12,7 @@
 ![GitHub watchers](https://img.shields.io/github/watchers/nuriozbey/flask-babel-example?style=social)
 
 Flask Application with Multi-Language Support (TR-EN-DE-FR) 
+![flask-babel](https://user-images.githubusercontent.com/19417966/234523334-6d9a5627-db5c-46da-b5d4-6d5424f34d86.gif)
 
 ## Installation
 
@@ -40,6 +41,7 @@ cd flask-babel-example
 ```
 
 #### Install Requirements
+![flask-babel](https://user-images.githubusercontent.com/19417966/234523308-bf8fbfe2-3684-463c-9cec-c4fe8d2d0700.gif)
 
 ```bash
 pip install -r requirements.txt
